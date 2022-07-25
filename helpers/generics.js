@@ -35,7 +35,7 @@ export const getInvert = (x, n) => {
   const { y } = euclideanAlgorithm(n, x)
   
   if(y > 0)
-    return undefined
+    return false
   
   return n + y
 }
