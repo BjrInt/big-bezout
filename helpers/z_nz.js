@@ -14,6 +14,9 @@ function* newZnZRing(n){
     if(inverts[x] === undefined){
       hasInvert = getInvert(x)
       inverts[x] = hasInvert
+
+      if(hasInvert && inverts[hasInvert] === undefined)
+        inverts[hasInvert] = x
     }
     else{
       hasInvert = inverts[x]
